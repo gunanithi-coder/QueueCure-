@@ -1,5 +1,5 @@
 {
-  "name": "QueueCure AI",
+  "name": "NexCare",
   "description": "Intelligent real-time patient queue management and voice booking dashboard optimized for Indian clinics.",
   "requestFramePermissions": [
     "microphone"

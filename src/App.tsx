@@ -1,3 +1,4 @@
+declare module "react";
 import { useState, useEffect, useRef } from "react";
 import {
   Users,
@@ -62,7 +63,7 @@ export default function App() {
   
   // Realtime Connection State
   const [isRealtime, setIsRealtime] = useState(false);
-  const [serverLogs, setServerLogs] = useState<string[]>(["Initialising QueueCure AI client..."]);
+  const [serverLogs, setServerLogs] = useState<string[]>(["Initialising NexCare AI client..."]);
 
   // Form State for receptionist checked-in
   const [newPatientForm, setNewPatientForm] = useState({
@@ -87,7 +88,7 @@ export default function App() {
   
   // AI assistant states
   const [assistantMessages, setAssistantMessages] = useState<Array<{ role: 'user' | 'assistant' | 'system', text: string }>>([
-    { role: 'assistant', text: "Hello! I am your QueueCure AI Operations Intelligent Auditor. Ask me anything about clinic status, doctor load, wait times, or bottleneck advice." }
+    { role: 'assistant', text: "Hello! I am your NexCare AI Operations Intelligent Auditor. Ask me anything about clinic status, doctor load, wait times, or bottleneck advice." }
   ]);
   const [assistantInput, setAssistantInput] = useState("");
   const [isAssistantTyping, setIsAssistantTyping] = useState(false);
@@ -597,7 +598,7 @@ export default function App() {
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-display text-xl font-bold tracking-tight text-white">QueueCure</span>
+                <span className="font-display text-xl font-bold tracking-tight text-white">NexCare</span>
                 <span className="bg-sky-500/10 text-sky-400 text-[10px] font-mono uppercase px-2 py-0.5 rounded border border-white/8 font-bold">AI Active</span>
               </div>
               <p className="text-[10px] text-slate-400">Intelligent Patient Flow Architecture</p>
