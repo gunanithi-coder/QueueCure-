@@ -1,33 +1,118 @@
-<div align="center">
-<<<<<<< HEAD
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# QueueCure AI
 
-# Run and deploy your AI Studio app
+## Problem Statement
 
-This contains everything you need to run your app locally.
+Many clinics still rely on paper tokens and manual queue management, resulting in long waiting times, poor visibility for patients, and operational inefficiencies for staff.
 
-View your app in AI Studio: https://ai.studio/apps/10cda311-d653-4544-bdf3-9a0a248ad477
+QueueCure AI is a real-time clinic queue management platform designed to modernize patient flow and improve the waiting experience.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## Features
 
+### Receptionist Dashboard
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-=======
+* Add new patients
+* Generate queue tokens
+* Call next patient
+* Manage queue status
+* Configure average consultation time
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+### Patient Waiting View
 
-  <h1>Built with AI Studio</h2>
+* Current token being served
+* Queue position tracking
+* Tokens ahead in queue
+* Estimated waiting time
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+### Real-Time Synchronization
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+* Instant queue updates
+* Live token status
+* No page refresh required
 
-</div>
->>>>>>> 1540eaf73b8b97eb4e727f3e5d92d00ddbbcbff0
+### Smart Queue Management
+
+* Dynamic wait time calculation
+* Emergency patient prioritization
+* Queue monitoring
+
+### Analytics
+
+* Patient statistics
+* Queue performance insights
+* Consultation trends
+
+---
+
+## Tech Stack
+
+Frontend
+
+* React
+* TypeScript
+* Tailwind CSS
+
+Backend
+
+* Node.js
+* Express.js
+* Socket.IO
+
+Database
+
+* MongoDB
+
+Deployment
+
+* Vercel
+* Render
+
+---
+
+## System Architecture
+
+Receptionist Dashboard
+↓
+Socket.IO Server
+↓
+MongoDB
+↓
+Patient Display
+
+---
+
+## Socket Events
+
+* patientAdded
+* queueUpdated
+* tokenCalled
+* patientRemoved
+* emergencyInserted
+
+---
+
+## Challenges Solved
+
+* Real-time synchronization across multiple screens
+* Dynamic wait time estimation
+* Queue consistency during concurrent actions
+* Emergency queue handling
+
+---
+
+## Future Enhancements
+
+* QR-based patient tracking
+* Voice announcements
+* Multi-clinic support
+* Predictive wait-time analytics
+* Mobile application
+
+---
+
+## Team
+
+QueueCure AI
+
+Built for Queue Cure '26 Hackathon.
