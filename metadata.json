@@ -1,0 +1,8 @@
+{
+  "name": "QueueCure AI",
+  "description": "Intelligent real-time patient queue management and voice booking dashboard optimized for Indian clinics.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
